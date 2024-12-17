@@ -23,7 +23,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SelectBtn: typeof import('./components/common/button/SelectBtn.vue')['default']
-    TestViewCompoenent: typeof import('./components/test/TestViewCompoenent.vue')['default']
+    TestViewCompoenent: typeof import('./components/solve/TestViewCompoenent.vue')['default']
     ViewBtn: typeof import('./components/common/button/ViewBtn.vue')['default']
     ViewComponent: typeof import('./components/test/ViewComponent.vue')['default']
     VIewComponent: typeof import('./components/test/VIewComponent.vue')['default']

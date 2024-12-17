@@ -14,7 +14,7 @@ export const menuUtils = {
       icon: "mdi-notebook-edit-outline",
     },
     {
-      title: "암기코트",
+      title: "암기노트",
       path: "memory-notes",
       value: "memory-notes",
       icon: "mdi-brain",

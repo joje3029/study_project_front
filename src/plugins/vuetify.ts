@@ -11,7 +11,7 @@ const myTheme = {
   colors: {
     primary: "#5149E9",
     background: "#ECEFF1",
-    surface: "#0F101F",
+    surface: "#ECEFF1",
     secondary: "#0F101F",
     tertiary: "#807AC2",
     error: "#F196E3",

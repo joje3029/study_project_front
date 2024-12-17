@@ -43,7 +43,7 @@ const goHome = () => {
 
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" permanent hide-overlay>
+    <v-navigation-drawer v-model="drawer" permanent hide-overlay color="secondary">
       <DrawerComponent />
     </v-navigation-drawer>
     <v-app-bar flat class="bg-shades-transparent border3">

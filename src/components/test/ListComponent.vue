@@ -6,6 +6,27 @@
     <v-btn  class="border2" @click="goToCreate">
       문제 등록
     </v-btn>
+    <v-card>
+      <v-card-title>
+        채점 목록
+      </v-card-title>
+      <v-card-text>
+        <v-table>
+          <thead>
+            <tr>
+              <th>날짜</th>
+              <th>점수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>날짜</td>
+              <td>점수</td>
+            </tr>
+          </tbody>
+        </v-table>
+      </v-card-text>
+    </v-card>
   </v-container>
 </template>
 

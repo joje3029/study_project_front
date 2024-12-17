@@ -1,5 +1,5 @@
 <template>
-  <v-card flat class="mx-auto border3">
+  <v-card flat class="mx-auto border3" color="secondary">
     <v-card
       :ripple="false"
       flat

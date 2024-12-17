@@ -1,18 +1,28 @@
 <template>
   <v-container>
-    <v-card class="mb-4 border5">
-      <v-card-text>
+    <v-sheet class="border3">
+      <v-card class="d-flex justify-space-between">
+        <v-btn>
+          목록으로 돌아가기
+        </v-btn>
+        <v-text-field label="점수" v-model="score" />
+      </v-card>
+    </v-sheet>
+   <v-sheet class="d-flex border3">
+
+    <v-card class="mr-4 border5" style="width: 50%;">
         <TestViewCompoenent />
-      </v-card-text>
     </v-card>
 
-
-    <!-- 두 번째 문제 카드 -->
-    <v-card>
-      <v-card-text>
+    <v-card class="border5" style="width: 50%;">
         <TestViewCompoenent />
-      </v-card-text>
     </v-card>
+    </v-sheet>
+    <v-sheet class="border3 d-flex justify-end">
+      <v-btn>
+        정답 확인
+      </v-btn>
+    </v-sheet>
   </v-container>
 </template>
 

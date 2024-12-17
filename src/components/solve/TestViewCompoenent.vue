@@ -1,9 +1,12 @@
 <template>
     <v-card>
       <div class="question-section mb-6">
-        <div class="text-body-1">
+        <div>
           React에서 컴포넌트의 상태를 관리하기 위해 사용하는 Hook은 무엇인가요?
-          <v-icon>mdi-star-outline</v-icon>
+          <!-- <v-icon>mdi-star-outline</v-icon> -->
+        </div>
+        <div class="d-flex justify-end" style="font-size: 12px;">
+         몇 회 틀림
         </div>
         <v-textarea
           variant="outlined"
@@ -35,7 +38,7 @@
         </div>
       </div>
   
-      <!-- <div class="d-flex gap-4">
+      <div class="d-flex gap-4">
         <v-btn
           block
           color="grey"
@@ -49,7 +52,7 @@
         >
           다음 문제
         </v-btn>
-      </div> -->
+      </div>
     </v-card>
   </template>
   
