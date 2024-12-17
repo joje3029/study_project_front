@@ -23,7 +23,23 @@ const routes = [
       {
         name: "test",
         path: "test",
-        component: () => import("@/pages/TestView.vue"),
+        children: [
+          {
+            path: "",//기본 경로
+            name: "test-main",
+            component: () => import("@/pages/TestView.vue"),
+          },
+          {
+            path: "solve",
+            name: "test-solve",
+            component: () => import("@/pages/test/TestSolveView.vue")
+          },
+          {
+            path: "create",
+            name: "test-create", 
+            component: () => import("@/pages/test/TestCreateView.vue")
+          }
+        ]
       },
       {
         name: "solve-problems",
