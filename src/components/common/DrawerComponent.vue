@@ -44,7 +44,7 @@ const isLinkActive = (link) => {
 };
 
 const goMain = () => {
-  router.push("main");
+  router.push({name:"main"});
 };
 </script>
 <style scoped></style>

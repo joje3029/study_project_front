@@ -48,7 +48,7 @@
 import { useRouter } from 'vue-router';
 const router = useRouter();
 const goToList = () => {
-  router.push('/test');
+  router.push({name:'test-main'});
 }
 </script>
 

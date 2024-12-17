@@ -33,11 +33,11 @@ const pagePath = computed(() => {
 
 const logOut = () => {
   storage.clearAuth();
-  router.push("/signin");
+  router.push({name:"signin"});
 };
 
 const goHome = () => {
-  router.push("/main");
+  router.push({name:"main"});
 };
 </script>
 

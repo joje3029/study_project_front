@@ -34,10 +34,10 @@
   import { useRouter } from 'vue-router';
   const router = useRouter();
   const goToSolve = () => {
-    router.push('/test/solve');
+    router.push({name:'test-solve'});
   }
   const goToCreate = () => {
-    router.push('/test/create');
+    router.push({name:'test-create'});
   }
 </script>
 <style scoped>

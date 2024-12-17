@@ -93,7 +93,7 @@ const signIn = () => {
   if (data.value.userId === "admin" && data.value.userPw === "admin123!") {
     setTimeout(() => {
       data.value.loading = false;
-      router.push("main");
+      router.push({name:"main"});
     }, 1000);
   } else {
     setTimeout(() => {
@@ -117,7 +117,7 @@ const signIn = () => {
   // userManagerService.signIn(param).then((d) => {
   //   if (d.data.success === true) {
   //     storage.setAuth(d.data.data);
-  //     router.push("host-management");
+  //     router.push({name:"host-management"});
   //   } else {
   //     resetForm();
   //     data.value.snackbar = true;

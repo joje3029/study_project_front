@@ -3,7 +3,6 @@ import { storage } from "@/utils/storage";
 import { commonStore } from "@/stores/app";
 
 const rootPath = import.meta.env.VITE_ROOT_PATH;
-console.log('rootPath:', rootPath);
 
 const routes = [
   {
@@ -49,7 +48,28 @@ const routes = [
       {
         name: "memory-notes",
         path: "memory-notes",
-        component: () => import("@/pages/MemoryNotesView.vue"),
+        children: [ 
+          {
+            path: "",
+            name: "memory-notes-main",
+            component: () => import("@/pages/MemoryNotesView.vue"),
+          },
+          {
+            path: "add",
+            name: "memory-notes-add",
+            component: () => import("@/pages/memory/MemoryNotesAddView.vue"),
+          },
+          {
+            path: "view-note",
+            name: "memory-notes-view-note",
+            component: () => import("@/pages/memory/MemoryNotesViewNote.vue"),
+          },
+          {
+            path: "view-card",
+            name: "memory-notes-view-card",
+            component: () => import("@/pages/memory/MemoryNotesViewCard.vue"),
+          }
+        ]
       },
       {
         name: "favorites",
@@ -66,7 +86,7 @@ const routes = [
   },
   {
     name: "signin",
-    path: '/signin',
+    path: "/signin",
     meta: {
       title: "로그인",
       requiresAuth: false,
