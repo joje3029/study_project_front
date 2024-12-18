@@ -2,22 +2,21 @@ export const menuUtils = {
   menuItem: [
     {
       title: "문제 풀기",
-      path: "test",
       value: "test",
       icon: "mdi-pencil-box-outline",
+      path: "/test"
     },
-
     {
       title: "오답노트",
-      path: "solve-problems",
       value: "solve-problems",
-      icon: "mdi-notebook-edit-outline",
+      icon: "mdi-notebook-outline",
+      path: "/solve-problems"
     },
     {
       title: "암기노트",
-      path: "memory-notes",
       value: "memory-notes",
       icon: "mdi-brain",
+      path: "/memory-notes",
     },
     // {
     //   title: "즐겨찾기",
@@ -27,7 +26,7 @@ export const menuUtils = {
     // },
     {
       title: "마이페이지",
-      path: "user",
+      path: "/user",
       value: "user",
       icon: "mdi-account",
     },
