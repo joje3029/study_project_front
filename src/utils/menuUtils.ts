@@ -19,12 +19,12 @@ export const menuUtils = {
       value: "memory-notes",
       icon: "mdi-brain",
     },
-    {
-      title: "즐겨찾기",
-      path: "favorites",
-      value: "favorites",
-      icon: "mdi-star",
-    },
+    // {
+    //   title: "즐겨찾기",
+    //   path: "favorites",
+    //   value: "favorites",
+    //   icon: "mdi-star",
+    // },
     {
       title: "마이페이지",
       path: "user",

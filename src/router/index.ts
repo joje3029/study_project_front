@@ -22,20 +22,33 @@ const routes = [
       {
         name: "test",
         path: "test",
+        
         children: [
           {
-            path: "",//기본 경로
+            path: "",
             name: "test-main",
+            meta: {
+              title: "문제 풀기",
+              requiresAuth: false,
+            },
             component: () => import("@/pages/TestView.vue"),
           },
           {
             path: "solve",
             name: "test-solve",
+            meta: {
+              title: "문제",
+              requiresAuth: false,
+            },
             component: () => import("@/pages/test/TestSolveView.vue")
           },
           {
             path: "create",
             name: "test-create", 
+            meta: {
+              title: "문제 등록",
+              requiresAuth: false,
+            },
             component: () => import("@/pages/test/TestCreateView.vue")
           }
         ]
@@ -52,33 +65,39 @@ const routes = [
           {
             path: "",
             name: "memory-notes-main",
+            meta: {
+              title: "암기노트",
+              requiresAuth: false,
+            },
             component: () => import("@/pages/MemoryNotesView.vue"),
           },
           {
             path: "add",
             name: "memory-notes-add",
+            meta: {
+              title: "암기 등록",
+              requiresAuth: false,
+            },
             component: () => import("@/pages/memory/MemoryNotesAddView.vue"),
           },
           {
             path: "view-note",
             name: "memory-notes-view-note",
+            meta: {
+              title: "암기 할 내용",
+              requiresAuth: false,
+            },
             component: () => import("@/pages/memory/MemoryNotesViewNote.vue"),
           },
-          {
-            path: "view-card",
-            name: "memory-notes-view-card",
-            component: () => import("@/pages/memory/MemoryNotesViewCard.vue"),
-          }
         ]
-      },
-      {
-        name: "favorites",
-        path: "favorites",
-        component: () => import("@/pages/FavoritesView.vue"),
       },
       {
         name: "user",
         path: "user",
+        meta: {
+          title: "개인정보",
+          requiresAuth: false,
+        },
         component: () => import("@/pages/UserView.vue"),
       },
 
