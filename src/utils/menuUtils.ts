@@ -20,15 +20,22 @@ export const menuUtils = {
     },
     // {
     //   title: "즐겨찾기",
-    //   path: "favorites",
     //   value: "favorites",
     //   icon: "mdi-star",
+    //   path: "/favorites",
     // },
     {
       title: "마이페이지",
       path: "/user",
       value: "user",
       icon: "mdi-account",
+    },
+    //관리자 권한시에만 나올 것.
+    {
+      title: "유저관리",
+      path: "/user-management",
+      value: "user-management",
+      icon: "mdi-account-group",
     },
   ],
 };

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storage } from "@/utils/storage";
-import { computed, ref, watchEffect } from "vue";
+import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 import DrawerComponent from "@/components/common/DrawerComponent.vue";
 
@@ -8,10 +8,11 @@ const route = useRoute();
 const router = useRouter();
 
 const menu = [
-  {
-    title: "비밀번호 변경",
-    icon: "mdi-lock",
-  },
+  //사용 안할 예정
+  // {
+  //   title: "비밀번호 변경",
+  //   icon: "mdi-lock",
+  // },
   {
     title: "로그아웃",
     icon: "mdi-logout",

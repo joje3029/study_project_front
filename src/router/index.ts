@@ -100,7 +100,11 @@ const routes = [
         },
         component: () => import("@/pages/UserView.vue"),
       },
-
+      {
+        name: "user-management",
+        path: "user-management",
+        component: () => import("@/pages/UserManagementView.vue"),
+      },
     ],
   },
   {
